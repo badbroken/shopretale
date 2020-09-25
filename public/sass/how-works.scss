@@ -1,0 +1,68 @@
+@import "helpers/variables";
+@import "helpers/fonts";
+@import "helpers/mixins";
+@import "helpers/body";
+@import "helpers/navigation";
+@import "helpers/footer";
+
+
+.hw-home {
+  background: url("../images/how-it-works/donut-float-fun 1.png") no-repeat;
+  background-size: cover;
+  height: 85vh;
+  width: 100vw;
+
+  .container-fluid {
+    h1 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 75vh;
+      @include h1font;
+      color: white;
+      font-weight: 500;
+    }
+  }
+}
+
+.custom-bg {
+  background-color: #FFF9EB;
+}
+
+.first , .second , .third {
+  height: 100vh;
+}
+
+.hw-signup {
+
+  .container-fluid {
+
+
+    .step {
+      padding: 10rem 0;
+
+      .texts {
+        .flex-row {
+
+          h3 {
+            @include h3font;
+            font-weight: bold;
+
+          }
+
+          span {
+            font-family: 'Dancing Script', cursive;
+            border: none;
+            padding: 1rem 3.1rem;
+            background-color: #EC008C;
+            color: white;
+            font-size: 75px;
+          }
+        }
+        p {
+          @include pfont;
+        }
+      }
+    }
+  }
+}

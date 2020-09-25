@@ -1,0 +1,164 @@
+// Screen optimization Starts Here
+
+//Laptop HiDPI
+@media only screen and (max-width: 1440px) {
+
+    // Home Starts Here
+    .home {
+        .container-fluid {
+            grid-template-columns: 2fr 2fr 2fr 3fr 1fr 1fr 1fr;
+
+            .left-text {
+                padding-top: 0rem;
+
+                h1 {
+                    font-size: 50px;
+                }
+
+                p {
+                    font-family: "Segoe UI Regular";
+                    font-size: 20px;
+                    padding-right: 0rem;
+                }
+            }
+
+            img {
+                &:nth-child(2) {
+                    top: 0rem;
+                    transform: scale(1);
+                }
+
+                &:nth-child(3) {
+                    top: 0rem;
+                    transform: scale(0.9);
+                    left: 3rem;
+                }
+
+                &:nth-child(4) {
+                    top: 1.4rem;
+                    transform: scale(0.8);
+                    left: 7.5rem;
+                }
+
+
+
+
+            }
+        }
+    }
+
+    // Home Ends Here
+
+
+    .feature {
+        .container-fluid {
+            .left-side {
+                p {
+                    font-family: "Segoe UI Regular";
+                    padding-right: 8rem;
+                }
+            }
+        }
+    }
+
+    .why-us {
+        .container-fluid {
+            h4 {
+                padding-bottom: 1rem;
+            }
+
+            img {
+                left: 2rem;
+            }
+        }
+    }
+
+    footer {
+        .row {
+            .col-md-10 {
+                h3 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+//Laptop MDPI Screen
+@media only screen and (max-width: 1280px) {
+    .navigation {
+        .container-fluid {
+            .navbar {
+                .navbrand {
+                    .navbar-brand {
+                        img {
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home {
+        .container-fluid {
+            .left-text {
+                h1 {
+                    font-size: 40px;
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 18px;
+                    padding-bottom: 3rem;
+                }
+
+            }
+        }
+    }
+
+    .feature {
+        .container-fluid {
+            .left-side {
+                p {
+                    padding-right: 5rem;
+                }
+            }
+        }
+    }
+
+    .why-us {
+        .container-fluid {
+            img {
+                left: 1rem;
+            }
+        }
+    }
+
+    footer {
+        height: 50vh;
+
+        .container-fluid {
+            margin: 0;
+
+
+            .row {
+                .col-md-2 {
+                    .icons {
+                        a {
+                            padding: 0 0.3rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-height: 720px) {
+    footer {
+        height: 57vh;
+    }
+}

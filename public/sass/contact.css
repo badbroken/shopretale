@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: local("./fonts/Segoe UI.woff"), url("./fonts/Segoe UI.woff") format(".woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  margin: 1rem 0;
+  padding: 0 10rem;
+}
+
+.navigation .container-fluid .navbar {
+  padding: 0.5rem 0;
+}
+@media only screen and (max-width: 1440px) {
+  .navigation .container-fluid .navbar a img {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .navigation .container-fluid .navbar .button {
+    display: none;
+  }
+}
+.navigation .container-fluid .button .btn {
+  background-color: #EC008C;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  font-family: "Segoe UI Regular", serif;
+  padding: 1rem;
+  padding: 0.7rem 3.2rem;
+}
+
+footer {
+  background: #19191B;
+  height: 40vh;
+  color: white;
+  text-align: center;
+}
+footer .container-fluid {
+  margin: 0;
+}
+footer .row {
+  padding-top: 4rem;
+}
+footer .row .left h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+footer .row .left .icons {
+  padding-top: 1.5rem;
+}
+footer .row .left .icons a {
+  padding: 0 0.5rem;
+}
+footer .row .left p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 1440px) {
+  footer .row .left p {
+    font-size: 18px;
+  }
+}
+footer .row .right button {
+  color: white;
+}
+footer .row .right p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+}
+@media only screen and (max-width: 1440px) {
+  footer .row .right p {
+    font-size: 18px;
+  }
+}
+footer .row .right p:nth-child(2) {
+  padding-bottom: 2rem;
+}
+footer .row .right hr {
+  background-color: white;
+  padding: 0 0rem;
+  width: 30%;
+  text-align: left;
+  margin: 0 auto;
+  height: 1px;
+}
+footer .row .right h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 4rem;
+}
+
+@media only screen and (max-height: 800px) {
+  footer {
+    height: 45vh;
+  }
+}
+.contact {
+  height: 100vh;
+}
+.contact .row .container-fluid {
+  font-family: "Segoe UI Regular", serif;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.contact .row .container-fluid button {
+  background-color: #EC008C;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  font-family: "Segoe UI Regular", serif;
+  padding: 1rem;
+  padding: 0.7rem 1rem;
+}
+.contact .row .container-fluid .header {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.contact .row .container-fluid .header h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.contact .row .container-fluid .header p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+}
+@media only screen and (max-width: 1440px) {
+  .contact .row .container-fluid .header p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contact {
+    margin-bottom: 8rem;
+  }
+}
+@media screen and (max-height: 800px) {
+  .contact {
+    margin-bottom: 10rem;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,35 @@
+@mixin btnchr {
+  background-color: $btn-bg;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  font-family: "Segoe UI Regular", serif;
+  padding: 1rem;
+}
+
+@mixin headerstyle {
+  font-family: "Segoe UI Regular", serif;
+  font-weight: bold;
+}
+
+@mixin pfont {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+  @media only screen and (max-width: 1440px){
+    font-size: 18px;
+  }
+}
+
+@mixin h1font {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 70px;
+  @media only screen and (max-width: 1440px){
+    font-size: 50px;
+  }
+}
+
+@mixin h3font {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+}

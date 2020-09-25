@@ -1,0 +1,40 @@
+@import "helpers/variables";
+@import "helpers/fonts";
+@import "helpers/mixins";
+@import "helpers/body";
+@import "helpers/navigation";
+@import "helpers/footer";
+
+.contact {
+  height: 45vh;
+  .row {
+    .container-fluid {
+      button {
+        @include btnchr;
+        padding: 0.7rem 1rem;
+      }
+
+      .header {
+        h3 {
+          @include h3font;
+        }
+
+        p {
+          @include pfont;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contact{
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .contact{
+    margin-bottom: 8rem;
+  }
+}

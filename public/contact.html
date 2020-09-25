@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="sass/contact.css">
+    <title>ShopRetale - About Us</title>
+</head>
+
+<body>
+
+<!-- Navigation Section Begins -->
+<section class="navigation">
+    <div class="container-fluid">
+        <nav class="nav navbar navbar-expand-lg navbar-light justify-content-between">
+
+            <div class="navbrand">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" width="90%" height="90%" alt="">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav" style="font-size: 1.1rem;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="how-works.html">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Submit Your Story</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="button">
+                <a class="btn" href="shopper.html">Get Started</a>
+            </div>
+        </nav>
+    </div>
+</section>
+<!-- Navigation section ends  -->
+<section class="contact">
+    <div class="row">
+        <div class="container-fluid col-lg-7">
+            <div class="header">
+                <h3>Contact Us</h3>
+                <p>Reach out to us and submit your story</p>
+            </div>
+            <div class="form-group">
+                <label for="username">Your Name</label>
+                <input type="text" class="form-control" id="username" placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+                <label for="compname">Retail Name</label>
+                <input type="text" class="form-control" id="compname">
+            </div>
+            <div class="form-group">
+                <label for="compemail">Retail Email</label>
+                <input type="email" class="form-control" id="compemail">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="compweb">Retail Website</label>
+                <input type="text" class="form-control" id="compweb">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">How did you hear about us?</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Facebook</option>
+                    <option>LinkedIn</option>
+                    <option>Twitter</option>
+                    <option>Instagram</option>
+                    <option>Friends</option>
+                </select>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Your Story</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Footer Starts Here -->
+<footer>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="left col-md-4">
+                <h3>ShopRetale</h3>
+                <div class="icons mx-0">
+                    <a href="#"><i class="fab fa-facebook fa-2x text-white"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x text-white"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square fa-2x text-white"></i></a>
+                </div>
+                <p>©2020ShopRetale</p>
+
+            </div>
+
+            <div class="right col-md-8">
+                <p>Join us to collectively make an impact!</p>
+                <p>We promise we don’t spam</p>
+                <br>
+                <hr>
+                <h3>Contact Us: shopretale@gmail.com</h3>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!-- Footer Ends Here -->
+
+
+<script src="/app.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
+<script src="/dist/jquery-3.5.1.min.js"></script>
+
+</body>
+
+</html>

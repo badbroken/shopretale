@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: local("./fonts/Segoe UI.woff"), url("./fonts/Segoe UI.woff") format(".woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  margin: 1rem 0;
+  padding: 0 10rem;
+}
+
+.navigation .container-fluid .navbar {
+  padding: 0.5rem 0;
+}
+@media only screen and (max-width: 1440px) {
+  .navigation .container-fluid .navbar a img {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .navigation .container-fluid .navbar .button {
+    display: none;
+  }
+}
+.navigation .container-fluid .button .btn {
+  background-color: #EC008C;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  font-family: "Segoe UI Regular", serif;
+  padding: 1rem;
+  padding: 0.7rem 3.2rem;
+}
+
+footer {
+  background: #19191B;
+  height: 40vh;
+  color: white;
+  text-align: center;
+}
+footer .container-fluid {
+  margin: 0;
+}
+footer .row {
+  padding-top: 4rem;
+}
+footer .row .left h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+footer .row .left .icons {
+  padding-top: 1.5rem;
+}
+footer .row .left .icons a {
+  padding: 0 0.5rem;
+}
+footer .row .left p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 1440px) {
+  footer .row .left p {
+    font-size: 18px;
+  }
+}
+footer .row .right button {
+  color: white;
+}
+footer .row .right p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+}
+@media only screen and (max-width: 1440px) {
+  footer .row .right p {
+    font-size: 18px;
+  }
+}
+footer .row .right p:nth-child(2) {
+  padding-bottom: 2rem;
+}
+footer .row .right hr {
+  background-color: white;
+  padding: 0 0rem;
+  width: 30%;
+  text-align: left;
+  margin: 0 auto;
+  height: 1px;
+}
+footer .row .right h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 4rem;
+}
+
+@media only screen and (max-height: 800px) {
+  footer {
+    height: 45vh;
+  }
+}
+.hw-home {
+  background: url("../images/how-it-works/donut-float-fun 1.png") no-repeat;
+  background-size: cover;
+  height: 85vh;
+  width: 100vw;
+}
+.hw-home .container-fluid h1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 75vh;
+  font-family: "Segoe UI Regular", serif;
+  font-size: 70px;
+  color: white;
+  font-weight: 500;
+}
+@media only screen and (max-width: 1440px) {
+  .hw-home .container-fluid h1 {
+    font-size: 50px;
+  }
+}
+
+.custom-bg {
+  background-color: #FFF9EB;
+}
+
+.first, .second, .third {
+  height: 100vh;
+}
+
+.hw-signup .container-fluid .step {
+  padding: 10rem 0;
+}
+.hw-signup .container-fluid .step .texts .flex-row h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-weight: bold;
+}
+.hw-signup .container-fluid .step .texts .flex-row span {
+  font-family: "Dancing Script", cursive;
+  border: none;
+  padding: 1rem 3.1rem;
+  background-color: #EC008C;
+  color: white;
+  font-size: 75px;
+}
+.hw-signup .container-fluid .step .texts p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+}
+@media only screen and (max-width: 1440px) {
+  .hw-signup .container-fluid .step .texts p {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=how-works.css.map */

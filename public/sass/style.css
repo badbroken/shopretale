@@ -1,0 +1,85 @@
+@media only screen and (max-width: 1440px) {
+  .home .container-fluid {
+    grid-template-columns: 2fr 2fr 2fr 3fr 1fr 1fr 1fr;
+  }
+  .home .container-fluid .left-text {
+    padding-top: 0rem;
+  }
+  .home .container-fluid .left-text h1 {
+    font-size: 50px;
+  }
+  .home .container-fluid .left-text p {
+    font-family: "Segoe UI Regular";
+    font-size: 20px;
+    padding-right: 0rem;
+  }
+  .home .container-fluid img:nth-child(2) {
+    top: 0rem;
+    transform: scale(1);
+  }
+  .home .container-fluid img:nth-child(3) {
+    top: 0rem;
+    transform: scale(0.9);
+    left: 3rem;
+  }
+  .home .container-fluid img:nth-child(4) {
+    top: 1.4rem;
+    transform: scale(0.8);
+    left: 7.5rem;
+  }
+
+  .feature .container-fluid .left-side p {
+    font-family: "Segoe UI Regular";
+    padding-right: 8rem;
+  }
+
+  .why-us .container-fluid h4 {
+    padding-bottom: 1rem;
+  }
+  .why-us .container-fluid img {
+    left: 2rem;
+  }
+
+  footer .row .col-md-10 h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .navigation .container-fluid .navbar .navbrand .navbar-brand img {
+    width: 75%;
+  }
+
+  .home .container-fluid .left-text h1 {
+    font-size: 40px;
+    padding-bottom: 1rem;
+  }
+  .home .container-fluid .left-text p {
+    font-size: 18px;
+    padding-bottom: 3rem;
+  }
+
+  .feature .container-fluid .left-side p {
+    padding-right: 5rem;
+  }
+
+  .why-us .container-fluid img {
+    left: 1rem;
+  }
+
+  footer {
+    height: 50vh;
+  }
+  footer .container-fluid {
+    margin: 0;
+  }
+  footer .container-fluid .row .col-md-2 .icons a {
+    padding: 0 0.3rem;
+  }
+}
+@media only screen and (max-height: 720px) {
+  footer {
+    height: 57vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+@import "helpers/variables";
+@import "helpers/fonts";
+@import "helpers/mixins";
+@import "helpers/body";
+@import "helpers/navigation";
+@import "helpers/footer";
+
+
+
+.contact {
+    height: 100vh;
+    .row {
+        .container-fluid {
+            font-family: "Segoe UI Regular", serif;
+            margin: 0 auto;
+            padding: 50px 0;
+
+            button {
+                @include btnchr();
+                padding: 0.7rem 1rem;
+            }
+
+            .header {
+                text-align: center;
+                padding-bottom: 2rem;
+
+                h3 {
+                    @include h3font;
+                }
+
+                p {
+                    @include pfont;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+.contact{
+    margin-bottom: 8rem;
+}
+}
+
+@media screen and (max-height: 800px) {
+    .contact{
+        margin-bottom: 10rem;
+    }
+}

@@ -1,0 +1,403 @@
+@import "helpers/variables";
+@import "helpers/fonts";
+@import "helpers/mixins";
+@import "helpers/body";
+@import "helpers/navigation";
+@import "helpers/footer";
+
+
+.home {
+  padding: 3rem 0;
+  height: 74vh;
+
+  .container-fluid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 4fr 1fr 1fr 1fr;
+
+    .left-text {
+      grid-column: 1 / span 4;
+      padding-top: 3rem;
+      padding-right: 30rem;
+
+      h1 {
+        @include h1font;
+        padding-bottom: 2rem;
+      }
+
+      p {
+        @include pfont;
+        padding-bottom: 2rem;
+      }
+
+      .button {
+        .btn {
+          @include btnchr;
+          padding: 0.7rem 3.2rem;
+        }
+      }
+    }
+
+
+    img {
+      &:nth-child(2) {
+        grid-column: 6;
+        grid-row: 1;
+        z-index: 1;
+        position: relative;
+        transform: scale(1.1);
+        top: 5rem;
+      }
+
+      &:nth-child(3) {
+        grid-column: 6;
+        grid-row: 1;
+        z-index: 0;
+        position: relative;
+        left: 4rem;
+        top: 5rem;
+      }
+
+      &:nth-child(4) {
+        grid-column: 6;
+        grid-row: 1;
+        z-index: -1;
+        position: relative;
+        left: 8.6rem;
+        top: 6.3rem;
+      }
+    }
+
+
+  }
+}
+
+.feature {
+  height: 100vh;
+  margin: 5rem 0;
+  padding-bottom: 4rem;
+  background-color: #FFF2F2;
+
+  h4 {
+    text-align: center;
+    font-style: italic;
+    background: #0D1025;
+    padding: 1rem;
+    color: white;
+  }
+
+  .container-fluid {
+
+    img {
+      height: 100%;
+    }
+
+    .left-side {
+      h3 {
+        @include h3font;
+        padding-bottom: 30px;
+      }
+
+      p {
+        @include pfont;
+        padding-right: 22rem;
+
+      }
+
+      button {
+        @include btnchr;
+
+      }
+    }
+
+
+    .first {
+      .card-footer {
+        background-color: #20303D;
+      }
+    }
+
+    .second {
+
+
+      .card-footer {
+        background-color: #C1DDED;
+        color: black !important;
+      }
+    }
+
+    .third {
+      .card-footer {
+        background-color: #D4D4D4;
+        color: black !important;
+      }
+    }
+
+    .card {
+      border: none;
+
+      .card-footer {
+        text-align: center;
+        font-family: 'Crimson Text', cursive;
+        font-style: italic;
+        color: white;
+      }
+    }
+  }
+
+
+}
+
+.why-us {
+  height: 40vh;
+
+  .container-fluid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 3fr 2fr 1fr;
+
+    .left {
+      grid-column: 1 / span 2;
+
+      span {
+        font-family: 'Caveat', cursive;
+        font-size: 36px;
+        text-align: center;
+        color: #EC008C;
+        padding-bottom: 30px;
+      }
+
+      p {
+        @include pfont;
+        font-style: italic;
+
+      }
+    }
+
+    .middle {
+      grid-column: 3;
+
+      img {
+        text-align: center;
+        position: relative;
+        bottom: 3rem;
+        left: 4rem;
+      }
+    }
+
+    .right {
+      grid-column: 5 / span 2;
+
+      h3 {
+        @include h3font;
+        padding-bottom: 30px;
+      }
+
+      p {
+        @include pfont;
+
+        u {
+          color: #EC008C;
+        }
+      }
+
+      button {
+        @include btnchr();
+        padding: 1rem 3rem;
+      }
+    }
+  }
+}
+
+
+.testimonial {
+  margin-top: 10rem;
+  background-color: #FFF9EB;
+  padding: 5rem 0;
+
+  .container-fluid {
+    .header {
+      padding-bottom: 4rem;
+
+      h3 {
+        @include h3font;
+        text-align: center;
+      }
+    }
+
+    .row {
+      p {
+        @include pfont;
+      }
+
+      h3 {
+        @include h3font;
+      }
+
+      .left {
+        .card {
+          img {
+            width: 50%;
+          }
+        }
+      }
+
+      .right {
+
+      }
+    }
+  }
+}
+
+
+// Screen optimization Starts Here
+
+
+@media only screen and (max-width: 1600px) {
+  .home {
+    padding-top: 3rem;
+    height: 71vh;
+
+    .container-fluid {
+
+      .left-text {
+        padding-right: 15rem;
+      }
+    }
+  }
+
+  .feature {
+    height: 100vh;
+  }
+
+  .testimonial {
+    height: 70vh;
+    padding-top: 2rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+  }
+}
+
+//Laptop HiDPI
+@media only screen and (max-width: 1440px) {
+  .home {
+
+    .container-fluid {
+      .left-text {
+        padding-right: 5rem;
+
+        h1 {
+          @include h1font;
+          padding-bottom: 2rem;
+        }
+
+        p {
+          @include pfont;
+          padding-bottom: 2rem;
+        }
+
+        .button {
+          .btn {
+            @include btnchr;
+            padding: 0.7rem 3.2rem;
+          }
+        }
+      }
+
+
+      img {
+
+        &:nth-child(2) {
+          top: 3rem;
+          transform: scale(1.0);
+        }
+
+        &:nth-child(3) {
+          transform: scale(0.9);
+          top: 3rem;
+
+        }
+
+        &:nth-child(4) {
+          top: 4.4rem;
+          transform: scale(0.9);
+          left: 8.2rem;
+        }
+      }
+
+
+    }
+  }
+
+  .feature {
+    padding-bottom: 0;
+
+    .container-fluid {
+      .left-side {
+
+        p {
+          @include pfont;
+          padding-right: 10rem;
+        }
+      }
+    }
+  }
+
+  .why-us {
+    .container-fluid {
+
+      img {
+        left: 2rem;
+      }
+
+      h3 {
+        @include h3font;
+        grid-column: 5 / span 2;
+        grid-row: 1 / span 1;
+        padding-bottom: 2rem;
+      }
+
+      button {
+        grid-column: 5 / span 1;
+        grid-row: 7 / span 2;
+        @include btnchr();
+      }
+    }
+  }
+
+
+}
+
+//Laptop MDPI
+@media only screen and (max-height: 800px) {
+  .home {
+    height: 68vh;
+
+    .container-fluid {
+      img {
+        &:nth-child(2) {
+          top: 1rem;
+        }
+
+        &:nth-child(3) {
+          top: 0.8rem;
+          left: 3rem;
+        }
+
+        &:nth-child(4) {
+          top: 2.4rem;
+          left: 6.8rem;
+        }
+      }
+    }
+  }
+  .feature {
+    .container-fluid {
+      .right-side {
+        img {
+          width: 235px;
+        }
+      }
+    }
+  }
+}

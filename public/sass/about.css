@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: local("./fonts/Segoe UI.woff"), url("./fonts/Segoe UI.woff") format(".woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  margin: 1rem 0;
+  padding: 0 10rem;
+}
+
+.navigation .container-fluid .navbar {
+  padding: 0.5rem 0;
+}
+@media only screen and (max-width: 1440px) {
+  .navigation .container-fluid .navbar a img {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .navigation .container-fluid .navbar .button {
+    display: none;
+  }
+}
+.navigation .container-fluid .button .btn {
+  background-color: #EC008C;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  font-family: "Segoe UI Regular", serif;
+  padding: 1rem;
+  padding: 0.7rem 3.2rem;
+}
+
+footer {
+  background: #19191B;
+  height: 40vh;
+  color: white;
+  text-align: center;
+}
+footer .container-fluid {
+  margin: 0;
+}
+footer .row {
+  padding-top: 4rem;
+}
+footer .row .left h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+footer .row .left .icons {
+  padding-top: 1.5rem;
+}
+footer .row .left .icons a {
+  padding: 0 0.5rem;
+}
+footer .row .left p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 1440px) {
+  footer .row .left p {
+    font-size: 18px;
+  }
+}
+footer .row .right button {
+  color: white;
+}
+footer .row .right p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+}
+@media only screen and (max-width: 1440px) {
+  footer .row .right p {
+    font-size: 18px;
+  }
+}
+footer .row .right p:nth-child(2) {
+  padding-bottom: 2rem;
+}
+footer .row .right hr {
+  background-color: white;
+  padding: 0 0rem;
+  width: 30%;
+  text-align: left;
+  margin: 0 auto;
+  height: 1px;
+}
+footer .row .right h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 4rem;
+}
+
+@media only screen and (max-height: 800px) {
+  footer {
+    height: 45vh;
+  }
+}
+.ab-home {
+  background: url("../images/about-home/beach-boardwalk-selfie 1.png") no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+}
+.ab-home .container {
+  height: 75vh;
+}
+.ab-home .container h1 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: #EC008C;
+  text-align: center;
+}
+@media only screen and (max-width: 1440px) {
+  .ab-home .container h1 {
+    font-size: 50px;
+  }
+}
+
+.ab-feature {
+  height: 100vh;
+  padding-bottom: 4rem;
+  background-color: #FFF7E3;
+  font-family: "Segoe UI Regular", serif;
+}
+.ab-feature h4 {
+  text-align: center;
+  font-style: italic;
+  background: #0D1025;
+  padding: 1rem;
+  color: white;
+}
+.ab-feature .container-fluid .left-side {
+  padding-right: 20rem;
+}
+.ab-feature .container-fluid .left-side h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.ab-feature .container-fluid .left-side p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+}
+@media only screen and (max-width: 1440px) {
+  .ab-feature .container-fluid .left-side p {
+    font-size: 18px;
+  }
+}
+
+.ab-feature-2 {
+  height: 100vh;
+}
+.ab-feature-2 .container-fluid .left-side {
+  padding-left: 20rem;
+}
+.ab-feature-2 .container-fluid .left-side h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.ab-feature-2 .container-fluid .left-side p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+}
+@media only screen and (max-width: 1440px) {
+  .ab-feature-2 .container-fluid .left-side p {
+    font-size: 18px;
+  }
+}
+
+.values {
+  background-color: #FFF7E3;
+  padding: 3rem 0;
+}
+.values .container-fluid h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-weight: bold;
+}
+.values .container-fluid .col-xl-3 {
+  padding-left: 0;
+}
+.values .container-fluid .col-xl-3 span {
+  background-color: #EC008C;
+  padding: 1rem 1.2rem;
+  color: white;
+}
+.values .container-fluid .col-xl-3 p {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 25px;
+}
+@media only screen and (max-width: 1440px) {
+  .values .container-fluid .col-xl-3 p {
+    font-size: 18px;
+  }
+}
+
+.ab-team {
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+}
+.ab-team .container-fluid {
+  margin: 5rem 0;
+}
+.ab-team .container-fluid h3 {
+  font-family: "Segoe UI Regular", serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 3rem;
+  font-weight: bold;
+}
+.ab-team .container-fluid .card-deck .card {
+  border: none;
+}
+.ab-team .container-fluid .card-deck .card .card-body .card-title {
+  font-family: "Segoe UI Regular", serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.ab-team .container-fluid .card-deck .card .card-body .card-text {
+  font-size: 20px;
+}
+.ab-team .container-fluid .card-deck .card .card-body .icons a {
+  padding: 0 0.5rem;
+  color: black;
+  font-size: 20px;
+}
+.ab-team .container-fluid .card-deck .card .card-body .icons a:hover {
+  color: #EC008C;
+}
+
+@media screen and (max-width: 1500px) {
+  img {
+    width: 400px;
+  }
+
+  .ab-home {
+    height: 77vh;
+  }
+
+  .ab-feature .container-fluid .left-side {
+    padding-right: 10rem;
+  }
+
+  .ab-feature-2 {
+    height: 80vh;
+  }
+  .ab-feature-2 .container-fluid .left-side {
+    padding-left: 10rem;
+  }
+
+  .ab-team .container-fluid {
+    margin: 5rem 0 0 0;
+  }
+  .ab-team .container-fluid .card-deck .card {
+    margin-left: 0;
+  }
+}
+@media screen and (max-height: 800px) {
+  .ab-feature .container-fluid {
+    margin-top: 0;
+  }
+  .ab-feature .container-fluid .d-flex img {
+    width: 340px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

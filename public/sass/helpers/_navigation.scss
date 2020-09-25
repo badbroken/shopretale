@@ -1,0 +1,27 @@
+.navigation {
+  .container-fluid {
+    .navbar {
+      padding: 0.5rem 0;
+        a {
+          img{
+            @media only screen and (max-width: 1440px){
+              width: 250px;
+            }
+          }
+        }
+      .button{
+        @media only screen and (max-width: 990px){
+          display: none;
+        }
+      }
+
+    }
+
+    .button {
+      .btn {
+        @include btnchr;
+        padding: 0.7rem 3.2rem;
+      }
+    }
+  }
+}
