@@ -35,7 +35,7 @@ app.post('/subscribe', (req, res) => {
         url: 'https://us2.api.mailchimp.com/3.0/lists/5358c58be2',
         method: 'POST',
         headers: {
-            Authorization: `auth ${process.env["jam_n_jelly"]}`
+            Authorization: `auth ${process.env.jam_n_jelly}`
         },
         body: mcDataPost
     }
